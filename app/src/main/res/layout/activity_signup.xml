@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/mint_green"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <!-- App Logo -->
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/AppLogo"
+        android:rotationY="0"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/healthsakhi_logo" />
+
+    <!-- Full Name -->
+    <EditText
+        android:id="@+id/fullNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/full_name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/user_email"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Password -->
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/sign_up_password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Confirm Password -->
+    <EditText
+        android:id="@+id/confirmPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/confirm_password"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:background="@drawable/rounded_border"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Sign Up Button -->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/signup"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/light_pink"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Already have an account? -->
+    <TextView
+        android:id="@+id/loginTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="@string/already_have_an_account_login"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</LinearLayout>

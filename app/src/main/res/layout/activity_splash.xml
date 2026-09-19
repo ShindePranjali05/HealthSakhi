@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBC8D1"
+    android:gravity="center"
+    android:orientation="vertical">  <!-- Soft pink background -->
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="1600dp"
+        android:layout_height="720dp"
+        android:contentDescription="@string/app_logo"
+        android:src="@drawable/splashlogo" />
+
+</LinearLayout>

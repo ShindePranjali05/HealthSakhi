@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.HealthSakhi" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#FFB6C1</item> <!-- soft pink -->
+        <item name="colorPrimaryDark">#FF69B4</item>
+        <item name="colorAccent">#FF69B4</item>
+        <item name="android:textColorHint">@color/black</item>
+
+    </style>
+
+
+    <style name="Theme.HealthSakhi" parent="Theme.MaterialComponents.DayNight.NoActionBar"/>
+
+</resources>

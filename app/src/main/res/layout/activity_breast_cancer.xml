@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BreastCancer">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                android:backgroundTint="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/breast_cancer_checkup"
+                        android:textSize="20sp"
+                        android:textColor="#FF4081"
+                        android:textStyle="bold" />
+
+                    <!-- Question 1 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_1_have_you_noticed_a_lump_or_thickening_in_your_breast_or_underarm"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <RadioGroup
+                        android:id="@+id/q1_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/q1_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes"/>
+                        <RadioButton android:id="@+id/q1_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no"/>
+                    </RadioGroup>
+
+                    <!-- Question 2 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_2_have_you_observed_changes_in_breast_shape_or_size_recently"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <RadioGroup
+                        android:id="@+id/q2_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/q2_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes"/>
+                        <RadioButton android:id="@+id/q2_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no"/>
+                    </RadioGroup>
+
+                    <!-- Question 3 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_3_do_you_experience_any_nipple_discharge_other_than_breast_milk"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <RadioGroup
+                        android:id="@+id/q3_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/q3_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes"/>
+                        <RadioButton android:id="@+id/q3_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no"/>
+                    </RadioGroup>
+
+                    <!-- Question 4 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_4_have_you_observed_any_skin_dimpling_or_puckering_on_the_breast"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <RadioGroup
+                        android:id="@+id/q4_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/q4_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes"/>
+                        <RadioButton android:id="@+id/q4_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no"/>
+                    </RadioGroup>
+
+                    <!-- Question 5 -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_5_do_you_feel_pain_or_tenderness_in_your_breast_area_frequently"
+                        android:textSize="16sp"
+                        android:layout_marginTop="12dp" />
+
+                    <RadioGroup
+                        android:id="@+id/q5_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <RadioButton android:id="@+id/q5_yes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes"/>
+                        <RadioButton android:id="@+id/q5_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no"/>
+                    </RadioGroup>
+
+                    <!-- Submit Button -->
+                    <Button
+                        android:id="@+id/checkButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/check_result"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:backgroundTint="#FF4081"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Result Text -->
+            <TextView
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textStyle="italic"
+                android:textColor="#FF4081"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
